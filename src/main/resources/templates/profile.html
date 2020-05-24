@@ -1,0 +1,29 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div id="app-root-element"></div>
+
+
+    <script th:src="@{'bundles/profile-app.bundle.js'}"></script>
+
+
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            console.log(location.pathname);
+
+            let portletModel = {
+                user: /*[[${user}]]*/ '',
+            };
+
+            let appRootElem = document.getElementById("app-root-element");
+            startProfileApp(appRootElem, portletModel);
+
+        });
+
+        /*]]>*/
+    </script>
+
+</div>
+

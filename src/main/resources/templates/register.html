@@ -1,0 +1,43 @@
+<div xmlns:th="http://www.w3.org/1999/xhtml">
+
+
+    <div class="container">
+        <div class="row mt-12">
+            <div class="col-md-12 offset-md-12 text-center">
+                <h1>
+                    <span style="color:orange; " >react-easy-form-state</span>
+                </h1>
+            </div>
+        </div>
+
+        <div id="dev-server-container">
+            <div id="app-root-element"></div>
+        </div>
+    </div>
+
+
+
+    <script th:src="@{'bundles/register-app.bundle.js'}"></script>
+
+
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            console.log(location.pathname);
+
+            let portletModel = {
+                urlSubmit: /*[[${urlSubmit}]]*/ '',
+            };
+
+            let appRootElem = document.getElementById("app-root-element");
+            startRegisterApp(appRootElem, portletModel);
+
+        });
+
+        /*]]>*/
+    </script>
+
+</div>
+

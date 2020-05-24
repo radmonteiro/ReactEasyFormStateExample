@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,      // Generate corrresponding .map file
+        "noImplicitAny": true,
+        "module": "commonjs",   // Specify module code generation
+        "target": "es6",        // Specify ECMAScript target version
+        "jsx": "react"          // Support JSX in .tsx files
+    },
+    "include": [
+        "./src/**/*.tsx"
+    ]
+}

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/rest")
-public class ExampleRestController {
+public class 	ExampleRestController {
 
 
 	@PostMapping("/register")
@@ -25,7 +25,7 @@ public class ExampleRestController {
 
 		UserRepository.setUser(user);
 
-		responseModel.setRedirectUrl("/profile");
+		responseModel.setUrlRedirect("/profile");
 
 		return responseModel;
 	}

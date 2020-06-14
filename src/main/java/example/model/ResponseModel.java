@@ -27,7 +27,7 @@ public class ResponseModel {
 	}
 
 
-	private String redirectUrl;
+	private String urlRedirect;
 	private final Errors errors = new Errors();
 
 
@@ -41,15 +41,15 @@ public class ResponseModel {
 		errors.fields.put(field, error);
 	}
 
-	public String getRedirectUrl() {
-		return redirectUrl;
+	public String getUrlRedirect() {
+		return urlRedirect;
 	}
 
 	public Errors getErrors() {
 		return errors;
 	}
 
-	public void setRedirectUrl(String redirectUrl) {
-		this.redirectUrl = redirectUrl;
+	public void setUrlRedirect(String urlRedirect) {
+		this.urlRedirect = urlRedirect;
 	}
 }

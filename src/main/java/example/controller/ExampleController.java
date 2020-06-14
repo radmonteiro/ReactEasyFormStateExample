@@ -23,7 +23,7 @@ public class ExampleController {
 	}
 
 
-	@GetMapping("/register")
+	@GetMapping({"/", "/register"})
 	public String viewRegister(Model model) {
 
 		model.addAttribute("urlSubmit", "/rest/register");

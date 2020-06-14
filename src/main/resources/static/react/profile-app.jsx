@@ -16,13 +16,22 @@ export function ProfileApp({user}){
             </Row>
             <Row>
                 <Col>
-                    <div>Nname: {name}</div>
+                    <div>Nname: {user.name}</div>
                 </Col>
                 <Col>
-                    <div>email: {email}</div>
+                    <div>email: {user.email}</div>
                 </Col>
                 <Col>
-                    <div>registrationDate: {registrationDate}</div>
+                    <div>registrationDate: {user.registrationDate}</div>
+                </Col>
+            </Row>
+
+
+            <Row>
+                <Col>
+                    <button onClick={() => window.location.href='/register'} >
+                        Register
+                    </button>
                 </Col>
             </Row>
 
